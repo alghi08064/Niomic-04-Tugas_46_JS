@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Belajar Javascript - NIOMIC</title>
+</head>
+<body>
+
+  <p>Klik untuk mengubah warna</p>
+  <button type="button" name="button" onclick="ubah_warna()">Ubah warna</button>
+  <p id="warna"></p>
+  <script type="text/javascript">
+
+  function ubah_warna() {
+    warna = prompt("Ketikkan warna yang kamu inginkan (English)", "Warna (red/blue/yellow/green)");
+    if (warna == "yellow") {
+      document.body.style.backgroundColor = "yellow";
+      document.getElementById("warna").innerHTML = "Kamu memilih background warna: " + warna;
+    }
+    if (warna == "red") {
+      document.body.style.backgroundColor = "red";
+      document.getElementById("warna").innerHTML = "Kamu memilih background warna: " + warna;
+    }
+    if (warna == "blue") {
+      document.body.style.backgroundColor = "blue";
+      document.getElementById("warna").innerHTML = "Kamu memilih background warna: " + warna;
+    }
+    if (warna == "green") {
+      document.body.style.backgroundColor = "green";
+      document.getElementById("warna").innerHTML = "Kamu memilih background warna: " + warna;
+    }
+  }
+  </script>
+</body>
+</html>
